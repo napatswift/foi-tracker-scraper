@@ -48,4 +48,4 @@ for pdf_file in tqdm.tqdm(pdf_files):
     print(f"Downloaded {file_name}")
 
 with open(pdf_files_json, "w") as file:
-    json.dump(pdf_files, file, indent=2)
+    json.dump(pdf_files, file, indent=2, sort_keys=True, ensure_ascii=False)
